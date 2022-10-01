@@ -1,0 +1,521 @@
+
+
+@font-face {
+    font-family: Branding;
+    src: url(fonts/Branding-Bold.otf), url(fonts/Branding-Semibold.otf), url(fonts/Branding-Light.otf), url(fonts/Branding-Medium.otf);
+}
+
+@font-face {
+    font-family: Branding-Light;
+    src: url(fonts/Branding-Light.otf);
+}
+
+body{
+    font-family: 'Branding';
+    margin: 0;
+}
+
+.menubarra{
+    background-color: #ed1b2f;
+    margin: 0;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menubarra img{
+    margin-left: 200px;
+    width: 200px;
+    
+}
+
+.menubarra nav{
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.menubarra nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px 0px 30px;
+    height: 15px;
+}
+
+.menubarra nav a:hover{
+    text-decoration: underline solid white 5px;
+    transition: all 0.2s;
+}
+
+
+.banner{
+    height: 250px;
+    display: flex;
+    margin: 100px 100px 0px 100px;
+}
+
+.textobanner{
+    padding: 10px;
+    background-color: #ed1b2f;
+    color: white;
+}
+
+#h1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.up{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.column1{
+    margin: 5%;
+    width: 21.6%;
+}
+
+.column2{
+    margin: 5%;
+    width: 21.6%;
+}
+
+.column3{
+    margin: 5%;
+    width: 21.6%;
+}
+
+.column3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.column3 a:hover{
+    color: #ed1b2f;
+    transition: all 0.2s;
+}
+
+.column1 img{
+    width: 200px;
+}
+
+.column1 a{
+    text-decoration: none;
+    color: #ed1b2f;
+}
+
+.column2 p{
+    margin-bottom: 2px;
+}
+
+#light{
+    color: gray;
+    margin-top: 2px;
+    font-family: Branding-Light;
+}
+
+#phone{
+    font-size: 22px;
+}
+
+hr{
+    border-color: gray;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.down{
+    justify-content: center;
+    display: flex;
+}
+
+.parceria a img{
+    margin-left: 10px;
+    width: 150px;
+}
+
+.direitos{
+    font-family: Branding-Light;
+    color: gray;
+    font-size: small;
+    margin-left: 5%;
+    width: 21.6%;
+}
+
+.parceria{
+    margin-left: 5%;
+    width: 21.6%;
+    align-items: center;
+    display: flex;
+}
+
+.follow{
+    align-items: center;
+    display: flex;
+    margin-left: 5%;
+    width: 21.6%;
+}
+
+#icon{
+    size: 20px;
+    width: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+#icon:hover{
+    color: #ed1b2f;
+    transition: all 0.2s;
+}
+
+.bannerfolheto{
+    width: 80%;
+    margin: 25px 10% 0px 10%;
+}
+
+
+
+.imagemproduto{
+    width: 10%;
+    
+}
+
+
+.produtos{
+    background-color: rgb(202, 202, 202);
+    padding-bottom: 150px;
+    
+}
+
+.colunaproduto{
+    margin-right: 0px;
+    height: 400px;
+    width: 277px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+    text-align: center;
+}
+
+.produtoscolunas{
+    column-count: 4;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sabermais{
+    text-align: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: 1px solid #ed1b2f;
+    font-family: Branding-Light;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.sabermais:hover{
+    background-color: #ed1b2f;
+    color: white;
+    transition: all 0.2s;
+}
+
+
+
+.sabermaisbotao{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1130px) {
+
+    .imagemproduto{
+        width: 10%;
+        
+    }
+    
+    
+    .produtos{
+        background-color: rgb(202, 202, 202);
+        padding-bottom: 150px;
+    }
+    
+    .colunaproduto{
+        margin-right: 0px;
+        height: 400px;
+        width: 277px;
+        margin-left: 25px;
+        margin-right: 25px;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .produtoscolunas{
+        margin-left: 3%;
+        margin-right: 10%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        column-count: 2;
+    }
+    
+    .sabermais{
+        text-align: center;
+        padding: 12px 24px;
+        text-decoration: none;
+        border: 1px solid #ed1b2f;
+        font-family: Branding-Light;
+        color: black;
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 740px){
+    body{
+        font-family: 'Branding';
+        margin: 0;
+    }
+    
+    .menubarra{
+        background-color: #ed1b2f;
+        margin: 0;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menubarra img{
+        margin-left: 200px;
+        width: 200px;
+        
+    }
+    
+    .menubarra nav{
+        margin-left: 20%;
+        margin-right: 10%;
+    }
+    
+    .menubarra nav a{
+        text-decoration: none;
+        color: white;
+        padding: 0px 30px 0px 30px;
+        height: 15px;
+    }
+    
+    .menubarra nav a:hover{
+        text-decoration: underline solid white 5px;
+        transition: all 0.2s;
+    }
+    
+    
+    .banner{ 
+        width: 300px;
+        margin-left: 20%;
+        margin-right: 50%;
+        height: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgbanner{
+        
+        width: 300px;
+    }
+    
+    .textobanner{
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        background-color: #ed1b2f;
+        color: white;
+    }
+    
+    #h1{
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    .footer{
+        background-color: black;
+        color: white;
+    }
+    
+    .up{
+        width: 90%;
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .column1{
+        margin: 5%;
+        width: 21.6%;
+    }
+    
+    .column2{
+        margin: 5%;
+        width: 21.6%;
+    }
+    
+    .column3{
+        margin: 5%;
+        width: 21.6%;
+    }
+    
+    .column3 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .column3 a:hover{
+        color: #ed1b2f;
+        transition: all 0.2s;
+    }
+    
+    .column1 img{
+        width: 200px;
+    }
+    
+    .column1 a{
+        text-decoration: none;
+        color: #ed1b2f;
+    }
+    
+    .column2 p{
+        margin-bottom: 2px;
+    }
+    
+    #light{
+        color: gray;
+        margin-top: 2px;
+        font-family: Branding-Light;
+    }
+    
+    #phone{
+        font-size: 22px;
+    }
+    
+    hr{
+        border-color: gray;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .down{
+        justify-content: center;
+        display: flex;
+    }
+    
+    .parceria a img{
+        margin-left: 10px;
+        width: 150px;
+    }
+    
+    .direitos{
+        font-family: Branding-Light;
+        color: gray;
+        font-size: small;
+        margin-left: 5%;
+        width: 21.6%;
+    }
+    
+    .parceria{
+        margin-left: 5%;
+        width: 21.6%;
+        align-items: center;
+        display: flex;
+    }
+    
+    .follow{
+        align-items: center;
+        display: flex;
+        margin-left: 5%;
+        width: 21.6%;
+    }
+    
+    #icon{
+        size: 20px;
+        width: 20px;
+        margin-left: 10px;
+        color: white;
+    }
+    
+    #icon:hover{
+        color: #ed1b2f;
+        transition: all 0.2s;
+    }
+    
+    .bannerfolheto{
+        width: 80%;
+        margin: 25px 10% 0px 10%;
+    }
+    
+    
+    
+    .imagemproduto{
+        width: 10%;
+        
+    }
+    
+    
+    .produtos{
+        background-color: rgb(202, 202, 202);
+        padding-bottom: 150px;
+    }
+    
+    .colunaproduto{
+        margin-right: 0px;
+        height: 400px;
+        width: 277px;
+        margin-left: 25px;
+        margin-right: 25px;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .produtoscolunas{
+        column-count: 1;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    
+    .sabermais{
+        text-align: center;
+        padding: 12px 24px;
+        text-decoration: none;
+        border: 1px solid #ed1b2f;
+        font-family: Branding-Light;
+        color: black;
+        font-size: 1.3rem;
+    }
+    
+    .sabermais:hover{
+        background-color: #ed1b2f;
+        color: white;
+        transition: all 0.2s;
+    }
+    
+    
+    
+    .sabermaisbotao{
+        margin-top: 50px;
+        text-align: center;
+    }
+}
