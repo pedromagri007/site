@@ -289,6 +289,10 @@ hr{
         overflow-x: hidden;
     }
     
+    #imagemlogo{
+        width: 80px;
+    }
+
     .menubarra{
         background-color: #ed1b2f;
         margin: 0;
