@@ -6,137 +6,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paraíso das Iguarias</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style=" font-family: Branding;">
     <header>
-        <div class="menubarra">
-            <img src="images/logobranco.png" alt="">
-            <nav class="linksmenu">
-                <a href="#">Folhetos</a>
-                <a href="#">A Nossa Loja</a>
-                <a href="#">Contactar</a>
+        <div class="header" id="header">
+            <button  onclick="toogleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+            <div class="logo_header">
+                <img class="imgmenu" src="images/logobranco.png" alt="logo_amanhecer">
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <a href="#">Quem Somos</a>
+                <a href="#">A nossa Loja</a>
+                <a href="#">Contactos</a>
                 <a href="#">Encomendar Online</a>
-            </nav>
+                <button onclick="toogleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </button>
+            </div>
+
         </div>
     </header>
-    <main>
-        <div class="banner">
-            <img class="imgbanner" src="images/BANNER1.png" alt="Banner amanhecer">
-            <div class="textobanner">
-                <h1>Olá Vizinho</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores ipsa esse quisquam rerum perspiciatis non illum nostrum? Illum quam, earum natus adipisci ducimus nemo eligendi doloremque asperiores neque tenetur?</p>
-            </div>
-        </div>
-        <h1 id="h1">Novidades para os nossos vizinhos</h1>
-        <div>
-            <picture>
-                <source media="(max-width: 500px)" srcset="images/bannerpequeno.png">
-                <img class="bannerfolheto" src="images/bannerfolheto29_05.png" alt="">
-            </picture>
-        </div>
-        <section class="produtos" style="background-color: rgba(202, 202, 202, 0.226);
-        padding-top: 1%; margin-top: 0px; border: 0px;">
-        <h1 id="h1" style="font-size: 2rem; padding-bottom: 20px;">Os nossos produtos</h1>
-            <div class="produtoscolunas">
-                <div class="colunaproduto">
-                    <div class="imagemproduto">
-                        <img src="images/dolcegusto.png" alt="dolcegusto" style="
-                        width: 277px;
-                    ">
-                    </div>
-                    <div class="textoproduto">
-                        <h2 id="h2produto">Cápsulas Dolce Gusto</h2>
-                        <p class="pproduto" id="light">Cápsulas de café Dolce Gusto</p>
-                    </div>
-                </div>
-                <div class="colunaproduto">
-                    <div class="imagemproduto">
-                        <img src="images/lindhals.png" alt="dolcegusto" style="
-                        width: 277px;
-                    ">
-                    </div>
-                    <div class="textoproduto">
-                        <h2 id="h2produto">Iogurtes Lindahls</h2>
-                        <p class="pproduto" id="light">Iogurte de comer Lindahls</p>
-                    </div>
-                </div>
-                <div class="colunaproduto">
-                    <div class="imagemproduto">
-                        <img src="images/pizzadeeppan.png" alt="dolcegusto" style="
-                        width: 277px;
-                    ">
-                    </div>
-                    <div class="textoproduto">
-                        <h2 id="h2produto">Pizza Deep Pan</h2>
-                        <p class="pproduto" id="light">Pizza congelada Deep Pan </p>
-                    </div>
-                </div>
-                <div class="colunaproduto">
-                    <div class="imagemproduto">
-                        <img src="images/ciflavatudo.png" alt="dolcegusto" style="
-                        width: 277px;
-                    ">
-                    </div>
-                    <div class="textoproduto">
-                        <h2 id="h2produto">Lava tudo CIF</h2>
-                        <p class="pproduto" id="light">Detergente Lava Tudo CIF</p>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="sabermaisbotao"><a class="sabermais" href="#">SAIBA MAIS</a></div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="up">
-                <div class="column1">
-                    <img src="images/logo.png" alt="logo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus veritatis excepturi error molestiae, voluptatem iure quos tenetur quaerat illum velit praesentium quis iusto vitae asperiores accusantium aperiam maxime corrupti.</p>
-                    <a href="#">Saber mais</a>
-                </div>
-                <div class="column2">
-                    <p>Contactos</p>
-                    <p id="light">De terça a sábado das 8h às 19h</p>
-                    <p id="phone">214 693 530</p>
-                    <p id="light">Número de telefone</p>
-                    <p id="phone">919 801 209</p>
-                    <p id="light">Contacto alternativo</p>
-                    <p>paraisodasiguarias.amanhecer@gmail.com</p>
-                </div>
-                <div class="column3">
-                    <a href="#">Quem somos</a>
-                    <br>
-                    <br>
-                    <a href="#">Termos e condições</a>
-                    <br>
-                    <br>
-                    <a href="#">Política de Privacidade</a>
-                    <br>
-                    <br>
-                    <a href="#">Política de Coockies</a>
-                    <br>
-                    <br>
-                    <a href="#">Contactar</a>
+    <div id="content" tabindex="0" onclick="closeSidebar()">
+        <main>
+            <div class="banner">
+                <img class="imgbanner" src="images/BANNER1.png" alt="Banner amanhecer">
+                <div class="textobanner">
+                    <h1>Olá Vizinho</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores ipsa esse quisquam rerum perspiciatis non illum nostrum? Illum quam, earum natus adipisci ducimus nemo eligendi doloremque asperiores neque tenetur?</p>
                 </div>
             </div>
-            <hr id="linha">
-            <div class="down">
-                <div class="direitos">
-                    <p>©2022 Paraíso da Iguarias Unip. Lda. Todos os direitos reservados.</p>
+            <h1 id="h1">Novidades para os nossos vizinhos</h1>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/bannerpequeno.png">
+                    <img class="bannerfolheto" src="images/bannerfolheto29_05.png" alt="">
+                </picture>
+            </div>
+            <section class="produtos" style="background-color: rgba(202, 202, 202, 0.226);
+            padding-top: 1%; margin-top: 0px; border: 0px;">
+            <h1 id="h1" style="font-size: 2rem; padding-bottom: 20px;">Os nossos produtos</h1>
+                <div class="produtoscolunas">
+                    <div class="colunaproduto">
+                        <div class="imagemproduto">
+                            <img src="images/dolcegusto.png" alt="dolcegusto" style="
+                            width: 277px;
+                        ">
+                        </div>
+                        <div class="textoproduto">
+                            <h2 id="h2produto">Cápsulas Dolce Gusto</h2>
+                            <p class="pproduto" id="light">Cápsulas de café Dolce Gusto</p>
+                        </div>
+                    </div>
+                    <div class="colunaproduto">
+                        <div class="imagemproduto">
+                            <img src="images/lindhals.png" alt="dolcegusto" style="
+                            width: 277px;
+                        ">
+                        </div>
+                        <div class="textoproduto">
+                            <h2 id="h2produto">Iogurtes Lindahls</h2>
+                            <p class="pproduto" id="light">Iogurte de comer Lindahls</p>
+                        </div>
+                    </div>
+                    <div class="colunaproduto">
+                        <div class="imagemproduto">
+                            <img src="images/pizzadeeppan.png" alt="dolcegusto" style="
+                            width: 277px;
+                        ">
+                        </div>
+                        <div class="textoproduto">
+                            <h2 id="h2produto">Pizza Deep Pan</h2>
+                            <p class="pproduto" id="light">Pizza congelada Deep Pan </p>
+                        </div>
+                    </div>
+                    <div class="colunaproduto">
+                        <div class="imagemproduto">
+                            <img src="images/ciflavatudo.png" alt="dolcegusto" style="
+                            width: 277px;
+                        ">
+                        </div>
+                        <div class="textoproduto">
+                            <h2 id="h2produto">Lava tudo CIF</h2>
+                            <p class="pproduto" id="light">Detergente Lava Tudo CIF</p>
+                        </div>
+                    </div>
+        
                 </div>
-                <div class="follow">
-                    <p>Siga-nos</p>
-                    <a href="#"><i id="icon" class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i id="icon" class="fa-brands fa-facebook"></i></a>
+                <div class="sabermaisbotao"><a class="sabermais" href="#">SAIBA MAIS</a></div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="up">
+                    <div class="column1">
+                        <img src="images/logo.png" alt="logo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus veritatis excepturi error molestiae, voluptatem iure quos tenetur quaerat illum velit praesentium quis iusto vitae asperiores accusantium aperiam maxime corrupti.</p>
+                        <a href="#">Saber mais</a>
+                    </div>
+                    <div class="column2">
+                        <p>Contactos</p>
+                        <p id="light">De terça a sábado das 8h às 19h</p>
+                        <p id="phone">214 693 530</p>
+                        <p id="light">Número de telefone</p>
+                        <p id="phone">919 801 209</p>
+                        <p id="light">Contacto alternativo</p>
+                        <p>paraisodasiguarias.amanhecer@gmail.com</p>
+                    </div>
+                    <div class="column3">
+                        <a href="#">Quem somos</a>
+                        <br>
+                        <br>
+                        <a href="#">Termos e condições</a>
+                        <br>
+                        <br>
+                        <a href="#">Política de Privacidade</a>
+                        <br>
+                        <br>
+                        <a href="#">Política de Coockies</a>
+                        <br>
+                        <br>
+                        <a href="#">Contactar</a>
+                    </div>
                 </div>
-                <div class="parceria">
-                    <p>Parceria</p>
-                    <a href="https://www.amanhecer.pt" target="_blank"><img id="imagemlogo" src="images/amanhecerlogo.png" alt=""></a>
+                <hr id="linha">
+                <div class="down">
+                    <div class="direitos">
+                        <p>©2022 Paraíso da Iguarias Unip. Lda. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="follow">
+                        <p>Siga-nos</p>
+                        <a href="#"><i id="icon" class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i id="icon" class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="parceria">
+                        <p>Parceria</p>
+                        <a href="https://www.amanhecer.pt" target="_blank"><img id="imagemlogo" src="images/amanhecerlogo.png" alt=""></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
+<script>
+    var header = document.getElementById('header');
+    var navigationheader = document.getElementById('navigation_header');
+    var content = document.getElementById('content');
+    var showSidebar = false;
+
+    function toogleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationheader.style.marginLeft = '-10vw';
+            navigationheader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationheader.style.marginLeft = '-100vw';
+            navigationheader.style.transition = '2s';
+            content.style.filter = 'blur(0px)';
+
+        }
+
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            toogleSidebar();
+        }
+    }
+    }
+</script>
 </html>
