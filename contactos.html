@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paraíso das Iguarias</title>
+    <title>Paraíso da Iguarias</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
             <div class="navigation_header" id="navigation_header">
                 <a href="quemsomos.html">Quem Somos</a>
                 <a href="loja.html">A nossa Loja</a>
-                <a href="contactos.html">Contactos</a>
+                <a href="#">Contactos</a>
                 <a href="#">Encomendar Online</a>
                 <button onclick="toogleSidebar()" class="btn_icon_header">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
@@ -34,33 +34,32 @@
     </header>
     <main>
         <section class="content2">
-            <h1 style="font-size: 40px; text-align: center; padding-top: 50px;">Conheça a nossa loja</h1>
+            <h1 style="font-size: 40px; text-align: center; padding-top: 50px;">Contactos</h1>
             <div class="bannerparaiso">
                 <img class="imgbannerparaiso" src="images/bannerparaiso.PNG" alt="bannerparaiso">
             </div>
-            <div class="lojainfo">
-                <div class="textoinfo">
-                    <h1>Mercearia Paraíso das<br>Iguarias</h1>
-                    <p>ㅤ</p>
-                    <p style="color: #ed1b2f;">Morada</p>
-                    <p>R. Principal 71C, Bicesse</p>
-                    <p>2645-361</p>
-                    <p>ALCABIDECHE</p>
-                    <p><strong>GPS:</strong> 38.7315788,-9.3849313</p>
-                    <p>ㅤ</p>
-                    <p style="color: #ed1b2f;">Horário</p>
-                    <p style="font-weight: bold;">Terça a Sábado</p>
-                    <p>Das 8:00h às 20:00h</p>
-                    <p style="font-weight: bold;">Domingo</p>
-                    <p>Das 8:00h às 13:00h</p>
-                    <p>ㅤ</p>
-                    <p style="color: #ed1b2f;">Contacto</p>
+            <div class="contactos">
+                <div class="left">
+                    <h1 style="font-size: 40px;">Mercearia Paraíso das Iguarias</h1>
+                    <p style="color: #ed1b2f;">Numéro de Telefone</p>
                     <p>+351 214 693 530</p>
+                    <p style="color: #ed1b2f;">Contacto Alternativo</p>
+                    <p>+351 919 801 429</p>
+                    <p style="color: #ed1b2f;">Email</p>
+                    <p>paraisodasiguarias.amanhecer@gmail.com</p>
                 </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.5338848547785!2d-9.38606184852896!3d38.72850926438556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ec59bd8bdf425%3A0xc861e316f81d4572!2sMercearia%20Paraiso%20Das%20Iguarias!5e0!3m2!1spt-PT!2spt!4v1665928918516!5m2!1spt-PT!2spt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="right">
+                    <hr class="hrpeq">
+                    <h1>Enviar Email</h1>
+                    <form action="mailto:paraisodasiguarias.amanhecer@gmail.com" method="POST" enctype="text/plain">
+                        <input placeholder="Nome" type="text" name="name" required>
+                        <input placeholder="Email" type="email"  name="email" required>
+                        <input placeholder="Número de Telemóvel" type="tel"  name="contacto" required>
+                        <input class="message" placeholder="Mensagem" type="text"  name="message" required>
+                        <button type="submit">Enviar</button>
+                   </form>
                 </div>
-            </div>
+                </div>
         </section>
     </main>
     <footer>
@@ -113,7 +112,6 @@
             </div>
         </div>
     </footer>
-</body>
 <script>
     var header = document.getElementById('header');
     var navigationheader = document.getElementById('navigation_header');
@@ -147,4 +145,5 @@
     }
     }
 </script>
+</body>
 </html>

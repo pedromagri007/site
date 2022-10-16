@@ -15,6 +15,54 @@ body{
     margin: 0;
 }
 
+.contactos{
+    display: flex;
+    background-color: white;
+    width: 80%;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-left: 10%;
+}
+
+.left{
+    width: 50%;
+    padding: 40px;
+    line-height: 20px;
+}
+
+.right{
+    border: 2px solid #ed1b2f;
+    text-align: center;
+    width: 50%;
+    column-count: 1;
+}
+
+.message{
+    height: 100px;
+}
+
+.right form input{
+    width: 90%;
+    padding: 5px 0 5px 5px;
+    border: 1px solid #ed1b2f;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+
+.right form button{
+    width: 90%;
+    padding: 5px 0 5px 0;
+    border: 1px solid #ed1b2f;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
 
 
 .lojainfo{
