@@ -749,7 +749,56 @@ hr{
     .emailinfo{
         font-size: x-small;
     }
+    /*CONTACTOS 740PX*/
 
+    .contactos{
+        display: block;
+        background-color: white;
+        width: 90%;
+        height: auto;
+        margin-top: 100px;
+        margin-left: 5%;
+        margin-left: 5%;
+    }
+    
+    .left{
+        width: 100%;
+        padding: 40px;
+    }
+    
+    .right{
+        border: 2px solid #ed1b2f;
+        text-align: center;
+        width: 99%;
+        column-count: 1;
+    }
+    
+    .message{
+        height: 100px;
+    }
+    
+    .right form input{
+        width: 90%;
+        padding: 5px 0 5px 5px;
+        border: 1px solid #ed1b2f;
+        border-radius: 5px;
+        margin-left: 5%;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .right form button{
+        width: 90%;
+        padding: 5px 0 5px 0;
+        border: 1px solid #ed1b2f;
+        background-color: transparent;
+        border-radius: 5px;
+        margin-left: 5%;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+    
 
 }
 
