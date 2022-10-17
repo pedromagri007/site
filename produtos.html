@@ -120,4 +120,37 @@
         </div>
     </footer>
 </body>
+<script>
+    var header = document.getElementById('header');
+    var navigationheader = document.getElementById('navigation_header');
+    var content = document.getElementById('content');
+    var showSidebar = false;
+
+    function toogleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationheader.style.marginLeft = '-10vw';
+            navigationheader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationheader.style.marginLeft = '-100vw';
+            navigationheader.style.transition = '2s';
+            content.style.filter = 'blur(0px)';
+
+        }
+
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            toogleSidebar();
+        }
+    }
+    }
+</script>
 </html>
