@@ -19,6 +19,49 @@ body{
     display: flex;
 }
 
+
+.equipadiv{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.equipacontent{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.equipacontent p{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.equipacontent img{
+    transition: 1s;
+    border-radius: 100%;
+    width: 30%;
+}
+
+@keyframes bright{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.equipacontent img:hover{
+    transition: 1s;
+    width: 35%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px#ed1b3060;
+}
+
 .grid1{
     background-color: white;
     width: 23.3%;
@@ -892,6 +935,55 @@ hr{
         margin-left: 5%;
         margin-right: 10%;
     }
+
+    /*EQUIPA 740PX*/
+
+    .equipadiv{
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .equipacontent{
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+    
+    .equipacontent p{
+        margin-top: 30px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .equipacontent img{
+        margin-top: 30px;
+        transition: 1s;
+        border-radius: 100%;
+        width: 30%;
+    }
+    
+    @keyframes bright{
+        0%{
+            transform: rotate(0);
+        }
+    
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    
+    .equipacontent img:hover{
+        transition: 1s;
+        border-radius: 100%;
+        width: 35%;
+        box-shadow: 5px 5px 15px#ed1b3060;
+    }
+    
+
+
 }
 
 
