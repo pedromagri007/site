@@ -23,7 +23,7 @@ body{
     width: 30%;
     padding-top: 50px;
     padding-bottom: 50px;
-    border: solid 1px black;
+    border: solid 1px white;
     border-radius: 10px;
 }
 
@@ -34,7 +34,7 @@ body{
 }
 
 .navlinks a{
-    background-color: white;
+    background-color: transparent;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 50%;
@@ -44,14 +44,27 @@ body{
     text-align: center;
     align-items: center;
     text-decoration: none;
-    color: #ed1b2f;
+    color: white;
     font-weight: bold;
+    border: solid 2px white;
+    border-radius: 30px;
+}
+
+.navlinks a:hover{
+    background-color: white;
+    color: #ed1b2f;
+    transition: 0.5s;
 }
 
 .links img{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+.iconshare{
+    color: white;
+    margin-top: 10px;
 }
 
 .gridprodutos{
@@ -1032,7 +1045,7 @@ hr{
     width: 80%;
     padding-top: 50px;
     padding-bottom: 50px;
-    border: solid 1px black;
+    border: solid 1px white;
     border-radius: 10px;
 }
 
@@ -1043,7 +1056,7 @@ hr{
 }
 
 .navlinks a{
-    background-color: white;
+    background-color: transparent;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 50%;
@@ -1053,7 +1066,7 @@ hr{
     text-align: center;
     align-items: center;
     text-decoration: none;
-    color: #ed1b2f;
+    color: white;
     font-weight: bold;
 }
 
@@ -1061,6 +1074,12 @@ hr{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+.navlinks a:hover{
+    background-color: white;
+    color: #ed1b2f;
+    transition: 0.5s;
 }
 
 }
